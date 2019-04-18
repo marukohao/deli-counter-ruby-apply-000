@@ -1,6 +1,6 @@
 # Write your code here.
 def line(katz_deli)
-  if katz_deli.length == 0 
+  if katz_deli.length == 0
     puts "The line is currently empty."
   else
     sum = "The line is currently:"
@@ -8,13 +8,17 @@ def line(katz_deli)
     puts sum
   end
 end
-  
 
-def take_a_number(katz_deli, last_name)
-  katz_deli << last_name
-  number = katz_deli.index(last_name) + 1
-  puts "Welcome, " + last_name + ". You are number " + number.to_s + " in line."
+
+
+def take_a_number(katz_deli, name)
+  katz_deli << name
+  number = katz_deli.index[name] + 1 
+  puts "Welcome, #{name}. You are number #{number} in line."
 end
+
+
+
 
 def now_serving(katz_deli)
   if katz_deli.length == 0 
